@@ -1,0 +1,13 @@
+openapi: 3.0.1
+
+info:
+  title: Proyecto de prueba con maven y OpenApi
+  version: 0.1.1
+
+paths:
+  /api:
+    get:
+      operationId: getApi
+      responses:
+        200:
+          description: Success

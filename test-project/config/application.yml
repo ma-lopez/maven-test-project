@@ -1,0 +1,27 @@
+
+
+spring:
+  application:
+    name: Proyecto de prueba Maven y OpenAPI
+  mvc:
+    view:
+      prefix: /jsp/
+      suffix: .jsp
+
+  resources:
+    static-locations:
+      - /src/main/webapp
+
+server:
+  servlet:
+    context-path: /test-project
+
+springfox:
+  documentation:
+    swagger:
+      v2:
+        path: /api-docs
+
+logging:
+  level:
+    org.springframework: DEBUG

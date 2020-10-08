@@ -1,12 +1,11 @@
 package com.ecofoo.test;
 
 import lombok.extern.slf4j.Slf4j;
+import lombok.val;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.ConfigurableApplicationContext;
 
-@EnableConfigurationProperties
 @SpringBootApplication
 @Slf4j
 public class Application {
@@ -17,6 +16,8 @@ public class Application {
 
         context = builder.run(args);
 
-        log.info("------ [Application {} running...] ------", context.getApplicationName());
+        val applicationName = context.getEnvironment().getProperty("spring.application.name");
+
+        log.info("------ [Application '{}' running...] ------", applicationName);
     }
 }

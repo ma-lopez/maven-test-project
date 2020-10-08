@@ -22,6 +22,13 @@
         <springboot.version>2.2.5.RELEASE</springboot.version>
 
         <lombok.version>1.18.12</lombok.version>
+        <openapi-generator-maven-plugin.version>4.2.3</openapi-generator-maven-plugin.version>
+        <springfox-swagger2.version>2.9.2</springfox-swagger2.version>
+        <jackson-databind-nullable.version>0.2.1</jackson-databind-nullable.version>
+        <build-helper-maven-plugin.version>3.1.0</build-helper-maven-plugin.version>
+        <swagger-models.version>1.6.0</swagger-models.version>
+
+        <jquery.version>2.1.1</jquery.version>
     </properties>
 
     <build>
